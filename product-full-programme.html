@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AI in the Built Environment (R10,000) | Full Programme | Institute of Building Design</title>
+  <meta name="description" content="South Africa's premier peer-reviewed programme on artificial intelligence for architects, engineers, and technologists. 8 live sessions over 5 weeks. 2 Cat 1 & 1 Cat 3 CPD points.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <aside class="header-topbar" aria-label="Official Institutional Notice">
+    <div class="container topbar-content">
+      <div class="topbar-badge">
+        <span class="dot"></span>
+        <span>Official Online Division of the South African Institute of Building Design (SAIBD)</span>
+      </div>
+      <div class="topbar-links">
+        <span>Voluntary Association: Act 44 of 2000</span>
+        <a href="mailto:admin@saibd.org.za">admin@saibd.org.za</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-logo" aria-label="Institute of Building Design Home">
+        <div class="logo-symbol">IBD</div>
+        <div class="logo-text">
+          <span class="logo-title">Institute of Building Design</span>
+          <span class="logo-sub">Division of SAIBD</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="product-seat-registration.html" class="nav-link">Seat Registration (R2,500)</a></li>
+          <li><a href="product-full-programme.html" class="nav-link active">Full Programme (R10,000)</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact-faqs.html" class="nav-link">Contact & FAQs</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-teal btn-sm" data-checkout-trigger="full-programme" id="nav-enrol-btn">Enrol Now</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="logo-title">IBD Navigation</span>
+        <button class="mobile-close" aria-label="Close Mobile Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-seat-registration.html">Seat Registration (R2,500)</a></li>
+        <li><a href="product-full-programme.html" style="color:var(--teal-600);">Full Programme (R10,000)</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact-faqs.html">Contact & FAQs</a></li>
+      </ul>
+      <div style="margin-top:auto;">
+        <button class="btn btn-teal btn-block" data-checkout-trigger="full-programme">Enrol Now (R10,000)</button>
+        <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-light);text-align:center;">SAIBD Endorsed • SACAP CPD Category 1 & 3</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Flagship Product Hero -->
+    <section class="hero-wrapper" style="padding:3.5rem 0 4.5rem;">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-kicker">
+            <span class="hero-kicker-dot"></span>
+            <span>Accredited Professional Development • SACAP Aligned</span>
+          </div>
+          <h1 class="hero-title">AI in the Built Environment: <span class="highlight">Full Programme</span></h1>
+          <p class="hero-desc">
+            An intensive 5-week executive masterclass for South African architects, technologists, and built environment professionals. Master First Principles computational thinking, LLMs, machine perception, and generative workflows—validated by a formal peer-review board.
+          </p>
+
+          <!-- Pricing & Enrolment Box -->
+          <div style="background-color:#FFFFFF;border:2px solid var(--teal-600);border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow-lg);margin-bottom:2rem;max-width:560px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem;">
+              <span class="badge badge-teal">Comprehensive Cohort Enrolment</span>
+              <span class="badge badge-gold" id="early-bird">Early Bird: R7,500 (Save R2,500)</span>
+            </div>
+            
+            <div class="price-display">
+              <span class="price-val">R10,000</span>
+              <span class="price-unit">standard tuition</span>
+            </div>
+            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.25rem;">
+              Includes all 8 live sessions, mentorship, reading materials, peer-review examination, SAIBD Certificate of Competence, and SACAP CPD verification.
+            </p>
+
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+              <button class="btn btn-teal btn-lg" data-checkout-trigger="full-programme" id="programme-buy-now-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                Enrol Now — Full Programme
+              </button>
+              <button class="btn btn-outline btn-lg" data-checkout-trigger="instalment-plan">
+                Pay in 3 Instalments (R2,500/mo)
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>2 Cat 1 & 1 Cat 3 CPD Points</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Peer-Reviewed Certificate</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Live Interactive Sessions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="images/masterclass-review.jpg" alt="IBD AI in Built Environment Masterclass Review" width="600" height="440" loading="eager">
+          </div>
+          <div class="hero-floating-card">
+            <div class="floating-card-header">
+              <div class="floating-card-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div>
+                <div class="floating-card-title">Lead Educator: Akheel Khan</div>
+                <div style="font-size:0.75rem;color:var(--teal-700);font-weight:600;">Founder, An Architect</div>
+              </div>
+            </div>
+            <p class="floating-card-text">
+              Pioneering computational design, generative neural architectures, and algorithmic workflows specifically calibrated for the South African built environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Curriculum & Syllabus (3 Core Modules) -->
+    <section class="section" id="curriculum">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Rigor</span>
+          <h2 class="section-title">Comprehensive 3-Part Curriculum</h2>
+          <p class="section-subtitle">
+            Most AI courses offer superficial prompt tricks. IBD teaches you the mathematical foundations, perceptual models, and architectural logic needed to command technology as a thinking partner.
+          </p>
+        </div>
+
+        <div class="benefits-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="benefit-card" style="border-top:4px solid var(--navy-900);">
+            <div class="benefit-icon-wrapper" style="background:var(--navy-900);color:#FFFFFF;">
+              <span style="font-weight:800;font-size:1.1rem;">01</span>
+            </div>
+            <span style="font-size:0.75rem;font-weight:700;color:var(--teal-700);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.25rem;">Weeks 1–2 • Sessions 1–2</span>
+            <h4>Part 1: Thinking</h4>
+            <p>
+              History, definitions, and foundational models of AI. Patrick Winston’s Triadic Model of Human Intelligence. Deconstruction of Large Language Models (LLMs): tokenisation, latent vectors, attention mechanisms, and temperature. Applying First Principles Thinking to architectural problem definitions.
+            </p>
+          </div>
+
+          <div class="benefit-card" style="border-top:4px solid var(--teal-600);">
+            <div class="benefit-icon-wrapper" style="background:var(--teal-600);color:#FFFFFF;">
+              <span style="font-weight:800;font-size:1.1rem;">02</span>
+            </div>
+            <span style="font-size:0.75rem;font-weight:700;color:var(--teal-700);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.25rem;">Weeks 2–3 • Sessions 3–4</span>
+            <h4>Part 2: Perception</h4>
+            <p>
+              Machine perception and computational statistics: Linear Regression, K-Nearest Neighbours (KNN), and Random Forests. Transition into Deep Learning: artificial neural networks from Perceptrons to convolutional networks (LeNet and AlexNet). Practical programming and computer vision for spatial layouts.
+            </p>
+          </div>
+
+          <div class="benefit-card" style="border-top:4px solid var(--navy-700);">
+            <div class="benefit-icon-wrapper" style="background:var(--navy-700);color:#FFFFFF;">
+              <span style="font-weight:800;font-size:1.1rem;">03</span>
+            </div>
+            <span style="font-size:0.75rem;font-weight:700;color:var(--teal-700);text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.25rem;">Weeks 4–5 • Sessions 5–8</span>
+            <h4>Part 3: Action</h4>
+            <p>
+              Supervised, unsupervised, and reinforcement learning in real-world practice. Training datasets vs testing datasets. Distinguishing tools from systemic technologies. Deploying custom Human-Computer Interaction (HCI) workflows using diffusion and multimodal models. Peer review project defense.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule & Assessment Rubric (Proof of Value) -->
+    <section class="section section-alt" id="schedule-assessment">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Proof of Academic Rigor</span>
+          <h2 class="section-title">Schedule & Peer-Reviewed Assessment</h2>
+          <p class="section-subtitle">
+            Competence is not measured by multiple choice quizzes. You demonstrate mastery by solving a real-world design or engineering challenge evaluated by industry peers.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:3rem;">
+          <!-- Schedule Table -->
+          <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-md);padding:2rem;box-shadow:var(--shadow-sm);">
+            <h3 style="font-size:1.25rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              5-Week Live Delivery Schedule
+            </h3>
+            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.5rem;">
+              Programmes run across 8 interactive evening or weekend sessions to accommodate full-time practising professionals.
+            </p>
+
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Week</th>
+                    <th>Session Focus & Delivery</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Week 1</strong></td>
+                    <td>Introduction to Elementary Concepts; Practical Execution & Tool Setup</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Week 2</strong></td>
+                    <td>Theoretical Base #1 (Triadic Models); Practical Execution #1 (LLM Reasoning)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Week 3</strong></td>
+                    <td>Theoretical Base #2 (Neural Networks); Practical Execution #2 (Spatial AI)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Week 4</strong></td>
+                    <td>Problem Identification; Problem Formulation & Prototype Workflows</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Week 5</strong></td>
+                    <td>Submission of Capstone Solution to Board; Formal Assessment & CPD Presentation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Assessment Rubric & Credential -->
+          <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-md);padding:2rem;box-shadow:var(--shadow-sm);">
+            <h3 style="font-size:1.25rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              Formal Board Assessment Weights
+            </h3>
+            <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:1.5rem;">
+              Reviewed by an independent panel of registered built environment professionals.
+            </p>
+
+            <div class="table-responsive" style="margin-bottom:1.5rem;">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Assessment Task</th>
+                    <th>Format</th>
+                    <th>Weight</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Critical Review Essay</strong></td>
+                    <td>Individual Analysis</td>
+                    <td><strong style="color:var(--navy-900);">10%</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Problem-Reframing Portfolio</strong></td>
+                    <td>Individual Practice Case</td>
+                    <td><strong style="color:var(--navy-900);">30%</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>New HCI AI Workflow</strong></td>
+                    <td>Design-Led Implementation</td>
+                    <td><strong style="color:var(--teal-700);">60%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="padding:1rem;background-color:var(--teal-50);border:1px solid var(--teal-100);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--teal-700);">
+              <strong>SACAP CPD Certification:</strong> Upon achieving a passing grade, you receive an accredited IBD Certificate of Competence carrying 2 Category 1 CPD credits and 1 Category 3 CPD credit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Proof of Value & Certificate Showcase -->
+    <section class="section" id="proof-of-value">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;">
+          <div>
+            <div class="hero-image-frame" style="box-shadow:var(--shadow-xl);">
+              <img src="images/certificate-competence.jpg" alt="Official IBD Peer-Reviewed Certificate of Competence" width="600" height="450" loading="lazy">
+            </div>
+          </div>
+
+          <div>
+            <span class="section-eyebrow">Institutional Credibility</span>
+            <h2 class="section-title">What Makes This Worth R10,000?</h2>
+            <p style="color:var(--text-muted);margin-bottom:1.5rem;">
+              Generic courses give you passive videos and arbitrary badges. The Institute of Building Design provides genuine institutional credibility recognized under South African statutory regulations.
+            </p>
+
+            <div style="display:flex;flex-direction:column;gap:1.25rem;">
+              <div style="display:flex;gap:1rem;">
+                <div style="width:36px;height:36px;background:var(--teal-50);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--teal-600);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong style="display:block;color:var(--navy-900);font-size:1rem;margin-bottom:0.25rem;">Direct CPD Statutory Compliance</strong>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0;">Satisfies your mandatory SACAP annual renewal quotas under Category 1 and Category 3 without having to attend fragmented half-day seminars.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1rem;">
+                <div style="width:36px;height:36px;background:var(--teal-50);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--teal-600);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong style="display:block;color:var(--navy-900);font-size:1rem;margin-bottom:0.25rem;">Board Peer Review & Formal Feedback</strong>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0;">Your practical challenge is assessed by registered practitioners. You receive granular technical critique on how to deploy AI safely in practice.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:1rem;">
+                <div style="width:36px;height:36px;background:var(--teal-50);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--teal-600);flex-shrink:0;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong style="display:block;color:var(--navy-900);font-size:1rem;margin-bottom:0.25rem;">Commercial ROI for Architectural Firms</strong>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0;">Graduates save between 6 to 15 hours per project on conceptual development, code compliance summarisation, and client presentation assets.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+              <button class="btn btn-teal btn-lg" data-checkout-trigger="full-programme">
+                Enrol Now — R10,000
+              </button>
+              <a href="product-seat-registration.html" class="btn btn-outline btn-lg">
+                Or Reserve Seat for R2,500
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Genuine Full Programme Testimonials -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Alumni Endorsements</span>
+          <h2 class="section-title">Tested in South African Practice</h2>
+          <p class="section-subtitle">Read how senior architects and technologists implemented their capstone workflows.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “This programme fundamentally shifted how our practice approaches preliminary design feasibility. Instead of spending 4 days producing basic massing variants, we now leverage custom Python and diffusion scripts to generate evaluated spatial options in hours. The peer review board held our submissions to true professional standards.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">BN</div>
+              <div>
+                <span class="author-name">Brendan Naidoo, Pr.Arch</span>
+                <span class="author-role">Director, Urban Habitat Architecture, Pretoria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “The peer-reviewed certificate carried immediate weight with our firm's partners. Having the backing of the SAIBD and the SACAP Category 1 points made it easy to expense the R10,000 through our skills development budget. Outstanding pedagogy.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">CV</div>
+              <div>
+                <span class="author-name">Clarissa van der Merwe</span>
+                <span class="author-role">Senior Technologist, Cape Town</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Akheel Khan is one of the very few educators who understands both code and spatial design. He doesn't show you surface tricks; he teaches you how to think in neural representations. It has transformed my engineering consultancy's workflow.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">TM</div>
+              <div>
+                <span class="author-name">Thabo Molefe, Pr.Techni</span>
+                <span class="author-role">Structural Associate, Johannesburg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Programme FAQs -->
+    <section class="section" id="faqs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Frequently Asked Questions</span>
+          <h2 class="section-title">Full Programme Details & Enrolment FAQs</h2>
+          <p class="section-subtitle">Everything you need to know about attendance, requirements, and CPD point allocation.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What exactly is included in the R10,000 fee?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Your tuition includes full admission to all 8 live interactive masterclasses, complete digital recording archives, code notebooks and prompt libraries, weekly 1-on-1 mentorship office hours, evaluation and feedback from the peer-review board, the official SAIBD Certificate of Competence, and submission of your Category 1 and Category 3 CPD points to SACAP.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What if I cannot attend one of the live online sessions?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Every live session is recorded in high definition and uploaded to the private participant portal within 6 hours, alongside session transcripts and code assets. You can review asynchronously and ask questions directly during weekly office hours.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need prior coding or computer science experience?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                No prior programming experience is required. The curriculum begins with First Principles thinking and intuitive graphical tools. For participants interested in Python or API integration, optional advanced tracks and templates are provided.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the 3-Month Interest-Free payment plan work?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                You pay a R2,500 deposit upon enrolment, followed by 3 equal monthly instalments of R2,500. There are zero interest charges, zero loan approval hassles, and no third-party debt collectors.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do I claim my Category 1 & Category 3 CPD points?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Upon board sign-off of your capstone submission, SAIBD issues an official CPD validation certificate bearing your SACAP registration number. SAIBD transmits completion logs to SACAP for official recording on your professional profile.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="section" style="padding-top:2rem;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Transform Your Architectural Practice With AI</h2>
+          <p>
+            Enrol in the full 5-week programme or reserve your seat today. Spaces are limited to maintain exceptional peer engagement.
+          </p>
+          <div class="cta-actions">
+            <button class="btn btn-teal btn-lg" data-checkout-trigger="full-programme">
+              Enrol Now — Full Programme (R10,000)
+            </button>
+            <button class="btn btn-outline-white btn-lg" data-checkout-trigger="seat-registration">
+              Secure Seat Deposit (R2,500)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:1.25rem;">
+            <div class="logo-symbol" style="background:#0F2438;">IBD</div>
+            <div class="logo-text">
+              <span class="logo-title" style="color:#FFFFFF;">Institute of Building Design</span>
+              <span class="logo-sub" style="color:var(--teal-400);">Division of SAIBD</span>
+            </div>
+          </div>
+          <p style="color:var(--text-on-dark-muted);font-size:0.875rem;line-height:1.6;">
+            The Institute of Building Design (IBD) is an official online division of the South African Institute of Building Design (SAIBD), established under the Architectural Profession Act No. 44 of 2000.
+          </p>
+          <div style="font-size:0.825rem;color:var(--teal-400);font-weight:600;margin-top:1rem;">
+            Durban, KwaZulu-Natal, South Africa
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Programmes & Pricing</h5>
+          <ul class="footer-links">
+            <li><a href="product-seat-registration.html">Seat Registration (R2,500)</a></li>
+            <li><a href="product-full-programme.html">Full Programme (R10,000)</a></li>
+            <li><a href="product-full-programme.html#early-bird">Early Bird Pricing (R7,500)</a></li>
+            <li><a href="product-seat-registration.html#benefits">Payment Plans & Instalments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Institute & Trust</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About the Institute</a></li>
+            <li><a href="about.html#credentials">SAIBD Credentials & Governance</a></li>
+            <li><a href="about.html#faculty">Leadership & Faculty</a></li>
+            <li><a href="about.html#philosophy">First Principles Pedagogy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact & Support</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:admin@saibd.org.za">admin@saibd.org.za</a></li>
+            <li><a href="https://www.saibd.org.za" target="_blank" rel="noopener">www.saibd.org.za</a></li>
+            <li><a href="contact-faqs.html">Frequently Asked Questions</a></li>
+            <li><a href="contact-faqs.html#payments">Payment Provider Comparison</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Institute of Building Design (IBD). An official division of the South African Institute of Building Design.
+        </div>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="contact-faqs.html" style="color:var(--text-on-dark-muted);">Admissions Policy</a>
+          <a href="contact-faqs.html#payments" style="color:var(--text-on-dark-muted);">Payment Terms</a>
+          <a href="about.html#credentials" style="color:var(--text-on-dark-muted);">SACAP Accreditation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Universal Checkout Drawer / Modal (Included on all pages) -->
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="checkout-dialog">
+      <div class="checkout-header">
+        <div>
+          <h3 id="modal-heading">Secure Programme Enrolment</h3>
+          <span style="font-size:0.75rem;color:var(--teal-700);font-weight:600;">256-Bit SSL Encrypted • Institute of Building Design</span>
+        </div>
+        <button class="checkout-close-btn" aria-label="Close Checkout">&times;</button>
+      </div>
+
+      <div class="checkout-body">
+        <!-- Form State -->
+        <form id="checkout-form">
+          <div class="checkout-step">
+            <label class="step-label">
+              <span class="step-number">1</span>
+              Select Enrolment Option
+            </label>
+            <div class="product-select-group">
+              <label class="product-option-radio">
+                <input type="radio" name="checkout-product" value="seat-registration">
+                <span class="radio-title">Seat Registration</span>
+                <span class="radio-price">R2,500</span>
+                <span style="display:block;font-size:0.75rem;color:var(--text-light);margin-top:0.25rem;">Deductible deposit</span>
+              </label>
+
+              <label class="product-option-radio selected">
+                <input type="radio" name="checkout-product" value="full-programme" checked>
+                <span class="radio-title">Full Programme</span>
+                <span class="radio-price">R10,000</span>
+                <span style="display:block;font-size:0.75rem;color:var(--text-light);margin-top:0.25rem;">Complete tuition & CPD</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="checkout-step">
+            <label class="step-label">
+              <span class="step-number">2</span>
+              Choose South African Payment Gateway
+            </label>
+            <div class="gateway-grid">
+              <label class="gateway-option selected">
+                <input type="radio" name="checkout-gateway" value="peach" checked>
+                <strong style="font-size:0.875rem;color:var(--navy-900);">Peach Payments</strong>
+                <span class="gateway-badge">Next-Day Payout</span>
+                <span style="font-size:0.675rem;color:var(--text-light);">Cards, Ozow, Capitec</span>
+              </label>
+
+              <label class="gateway-option">
+                <input type="radio" name="checkout-gateway" value="yoco">
+                <strong style="font-size:0.875rem;color:var(--navy-900);">Yoco</strong>
+                <span class="gateway-badge" style="color:var(--teal-700);">Instant Payout</span>
+                <span style="font-size:0.675rem;color:var(--text-light);">Fast local cards</span>
+              </label>
+
+              <label class="gateway-option">
+                <input type="radio" name="checkout-gateway" value="paystack">
+                <strong style="font-size:0.875rem;color:var(--navy-900);">Paystack</strong>
+                <span class="gateway-badge" style="color:var(--navy-700);">Standard</span>
+                <span style="font-size:0.675rem;color:var(--text-light);">Cards, Apple Pay</span>
+              </label>
+            </div>
+            
+            <div id="checkout-gateway-note" style="margin-top:0.75rem;padding:0.75rem 1rem;background-color:var(--bg-subtle);border-radius:var(--radius-sm);font-size:0.8rem;color:var(--navy-850);">
+              <!-- Injected dynamically by JS -->
+            </div>
+          </div>
+
+          <div class="checkout-step">
+            <label class="step-label">
+              <span class="step-number">3</span>
+              Candidate & Professional Registration
+            </label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-fname">First Name *</label>
+                <input type="text" id="checkout-fname" class="form-control" placeholder="e.g. Sipho" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-lname">Last Name *</label>
+                <input type="text" id="checkout-lname" class="form-control" placeholder="e.g. Ndlovu" required>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:0.75rem;">
+              <label class="form-label" for="checkout-email">Professional Email *</label>
+              <input type="email" id="checkout-email" class="form-control" placeholder="sipho@architects.co.za" required>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:0.75rem;">
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-phone">Mobile / WhatsApp *</label>
+                <input type="tel" id="checkout-phone" class="form-control" placeholder="+27 82 123 4567" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-sacap">SACAP / SAIBD Reg No.</label>
+                <input type="text" id="checkout-sacap" class="form-control" placeholder="e.g. D1234 (Optional)">
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-summary-box">
+            <div class="summary-row">
+              <span id="checkout-item-title">Full Enrolment: AI in the Built Environment</span>
+              <span id="checkout-subtotal" style="font-weight:600;color:var(--navy-900);">R10,000</span>
+            </div>
+            <div class="summary-row">
+              <span>Card / Processing Surcharge</span>
+              <span id="checkout-processing-fee" style="color:var(--teal-700);font-weight:600;">R0.00</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total Due Now</span>
+              <span id="checkout-total" style="color:var(--teal-700);">R10,000</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-teal btn-block btn-lg" id="checkout-submit-btn">
+            Proceed to Secure Payment
+          </button>
+
+          <p style="margin:1rem 0 0;font-size:0.75rem;color:var(--text-light);text-align:center;">
+            By completing this enrolment, you agree to the Institute of Building Design intake guidelines. You will receive an official SAIBD confirmation receipt and onboarding instructions via email.
+          </p>
+        </form>
+
+        <!-- Success Confirmation State -->
+        <div id="checkout-success" style="display:none;text-align:center;padding:1.5rem 0;">
+          <div style="width:64px;height:64px;background-color:var(--teal-50);color:var(--teal-600);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 style="font-size:1.6rem;margin-bottom:0.5rem;color:var(--navy-900);">Enrolment Confirmed!</h3>
+          <p style="color:var(--text-muted);font-size:0.95rem;max-width:440px;margin:0 auto 1.5rem;">
+            Your place has been recorded with the IBD admissions board. An official confirmation email with your tax invoice and course onboarding pack has been dispatched.
+          </p>
+
+          <div style="background-color:var(--bg-subtle);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:1.25rem;text-align:left;max-width:440px;margin:0 auto 1.5rem;font-size:0.875rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="color:var(--text-light);">Reference Number:</span>
+              <strong id="receipt-ref" style="color:var(--navy-900);">IBD-894120</strong>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="color:var(--text-light);">Enrolment Item:</span>
+              <span id="receipt-item" style="font-weight:600;color:var(--navy-900);">Full Programme</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <span style="color:var(--text-light);">Amount Paid:</span>
+              <strong id="receipt-amount" style="color:var(--teal-700);">R10,000</strong>
+            </div>
+            <div style="display:flex;justify-content:space-between;">
+              <span style="color:var(--text-light);">Gateway Provider:</span>
+              <span id="receipt-gateway" style="font-weight:600;color:var(--navy-900);">Peach Payments</span>
+            </div>
+          </div>
+
+          <button class="btn btn-navy" onclick="document.getElementById('checkout-modal').classList.remove('active');document.body.style.overflow='';" style="margin:0 auto;">
+            Close & Return to Website
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

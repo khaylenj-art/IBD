@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Institute of Building Design | Official Online Division of SAIBD</title>
+  <meta name="description" content="Build your future in building design. End the CPD nightmare and stop wasting money on courses that don't add value. Official CPD programmes by SAIBD and An Architect.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Clean Header: Only Logo on Left, Only Home / About Us / Enrol Now on Right -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-logo" aria-label="Institute of Building Design Home">
+        <img src="Logo.png" alt="Institute of Building Design Logo" width="160" height="52">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-teal btn-sm" data-checkout-trigger="cpd-companion" id="nav-enrol-btn">Enrol Now</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="Logo.png" alt="Logo" style="height:44px;width:auto;">
+        <button class="mobile-close" aria-label="Close Mobile Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" style="color:var(--teal-600);">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div style="margin-top:auto;display:flex;flex-direction:column;gap:0.75rem;">
+        <button class="btn btn-teal btn-block" data-checkout-trigger="cpd-companion">Enrol Now</button>
+        <p style="margin-top:0.75rem;font-size:0.8rem;color:var(--text-light);text-align:center;">
+          SAIBD & An Architect Collaboration
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO: Centered, No Image, Addressing CPD Nightmare & Wasted Money -->
+    <section class="hero-wrapper" id="home">
+      <div class="container hero-content-centered">
+        <div class="hero-kicker" style="margin-bottom:1.5rem;">
+          <span class="hero-kicker-dot"></span>
+          <span>SAIBD & An Architect Professional Development Collaboration</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Build your future in building design.
+        </h1>
+        
+        <p class="hero-desc">
+          We help built environment practitioners solve the CPD nightmare and stop wasting money on superficial courses that don't add genuine career or statutory value. Gain accredited SACAP CPD points, peer-reviewed competencies, and practical industry workflows through institutional education.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#programmes" class="btn btn-navy btn-lg">Explore Programmes</a>
+          <button class="btn btn-teal btn-lg" data-checkout-trigger="cpd-companion">Enrol Now</button>
+        </div>
+
+        <div class="hero-trust-list">
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Act 44 of 2000 Recognized Voluntary Association</span>
+          </div>
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>All Cat 1 + Cat 3 Points Covered</span>
+          </div>
+          <div class="hero-trust-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Assisted Tracking & Certification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SIGNALS BAR -->
+    <section class="trust-bar" id="trust-signals" aria-label="Trust Signals and Credentials">
+      <div class="container trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <strong>Institutional Collaboration</strong>
+            <span>Joint partnership between An Architect and the South African Institute of Building Design.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          </div>
+          <div>
+            <strong>Statutory Legitimacy</strong>
+            <span>SAIBD is recognised under the Architectural Profession Act No. 44 of 2000.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <div>
+            <strong>No Wasted Hours</strong>
+            <span>Transparent, high-value learning designed to keep your annual license compliant.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <strong>Direct Admissions Support</strong>
+            <span>Direct support via admin@saibd.org.za or responsive admissions advisory.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PROGRAMMES: Concise Option 1 & Option 2 Cards (Only Complete Payment & More Details Buttons) -->
+    <section class="section" id="programmes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Professional Development</span>
+          <h2 class="section-title">Our Programmes</h2>
+          <p class="section-subtitle">
+            Choose the programme tailored to your professional CPD compliance and practice growth.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Option 1: CPD Companion -->
+          <div class="product-card" style="padding:2.25rem 2rem;">
+            <div class="product-header" style="margin-bottom:1.25rem;padding-bottom:1.25rem;">
+              <span class="product-tag">Option 1</span>
+              <h3>CPD Companion</h3>
+              <p class="product-desc" style="font-weight:600;color:var(--navy-850);margin-bottom:0.75rem;">
+                Collaboration between An Architect & SAIBD
+              </p>
+              <div class="price-display">
+                <span class="price-val">R 2,500</span>
+                <span class="price-unit">opening offer</span>
+              </div>
+            </div>
+
+            <div class="product-features-title">What's Included:</div>
+            <ul class="feature-list" style="margin-bottom:2rem;">
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>All Cat 1 + 3 Points for the year</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Guidance on how to claim Cat 2</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>A VA membership (includes discounts)</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Self paced and live learning</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Certification and assisted tracking of points</span>
+              </li>
+            </ul>
+
+            <!-- Only 2 Buttons: Complete Payment or More Details -->
+            <div class="product-actions">
+              <a href="https://paystack.shop/pay/bzzaclu1al" target="_blank" rel="noopener" class="btn btn-teal btn-block btn-lg">
+                Complete Payment
+              </a>
+              <a href="cpd-companion.html" class="btn btn-outline btn-block">
+                More Details
+              </a>
+            </div>
+          </div>
+
+          <!-- Option 2: AI in the Built Environment -->
+          <div class="product-card featured" style="padding:2.25rem 2rem;">
+            <div class="featured-ribbon">Executive Masterclass</div>
+            <div class="product-header" style="margin-bottom:1.25rem;padding-bottom:1.25rem;">
+              <span class="product-tag">Option 2</span>
+              <h3>AI in the Built Environment</h3>
+              <p class="product-desc" style="margin-bottom:0.75rem;">
+                For professionals who want CPD points, rigorous training & peer review
+              </p>
+              <div class="price-display">
+                <span class="price-val">R 10,000</span>
+                <span class="price-unit">full tuition</span>
+              </div>
+              <span class="price-note" style="color:var(--navy-900);">
+                ★ Early bird: R 7,500 if paid before early intake deadline
+              </span>
+            </div>
+
+            <div class="product-features-title">What's Included:</div>
+            <ul class="feature-list" style="margin-bottom:2rem;">
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>8 live online interactive sessions spread over 5 weeks</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Digital course archive, code templates & direct mentorship</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>2 Category 1 and 1 Category 3 CPD points validated with SACAP</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Assessed by an independent peer-review board</span>
+              </li>
+              <li class="feature-item">
+                <svg class="feature-icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Official SAIBD Peer-Reviewed Certificate of Competence</span>
+              </li>
+            </ul>
+
+            <!-- Only 2 Buttons: Complete Payment or More Details -->
+            <div class="product-actions">
+              <a href="https://paystack.shop/pay/bzzaclu1al" target="_blank" rel="noopener" class="btn btn-teal btn-block btn-lg">
+                Complete Payment
+              </a>
+              <a href="ai-in-the-built-environment.html" class="btn btn-outline btn-block">
+                More Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHAT MAKES THIS WORTH R 10,000? -->
+        <div style="margin-top:3.5rem;background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:2.75rem 2.25rem;box-shadow:var(--shadow-md);">
+          <div style="max-width:760px;margin-bottom:1.75rem;">
+            <span class="section-eyebrow">Institutional Value & Standards</span>
+            <h3 style="font-size:1.75rem;margin-bottom:0.75rem;color:var(--navy-900);">What Makes This Worth R 10,000?</h3>
+            <p style="font-size:1.05rem;color:var(--text-muted);line-height:1.65;margin-bottom:0;">
+              Generic courses give you passive videos and arbitrary badges. The Institute of Building Design provides genuine institutional credibility recognized under South African statutory regulations.
+            </p>
+          </div>
+
+          <div class="worth-card-grid">
+            <div class="worth-card">
+              <div style="width:38px;height:38px;background:var(--teal-50);color:var(--teal-700);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h4>Direct CPD Statutory Compliance</h4>
+              <p>
+                Satisfies your mandatory SACAP annual renewal quotas under Category 1 and Category 3 without having to attend fragmented half-day seminars.
+              </p>
+            </div>
+
+            <div class="worth-card">
+              <div style="width:38px;height:38px;background:var(--teal-50);color:var(--teal-700);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h4>Board Peer Review & Formal Feedback</h4>
+              <p>
+                Your practical challenge is assessed by registered practitioners. You receive granular technical critique on how to deploy AI safely in practice.
+              </p>
+            </div>
+
+            <div class="worth-card">
+              <div style="width:38px;height:38px;background:var(--teal-50);color:var(--teal-700);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <h4>Commercial ROI for Architectural Firms</h4>
+              <p>
+                Graduates save between 6 to 15 hours per project on conceptual development, code compliance summarisation, and client presentation assets.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+            <a href="https://paystack.shop/pay/bzzaclu1al" target="_blank" rel="noopener" class="btn btn-teal btn-lg">
+              Enrol Now — R 10,000
+            </a>
+            <a href="ai-in-the-built-environment.html" class="btn btn-outline btn-lg">
+              Read Course Curriculum
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Professional Feedback</span>
+          <h2 class="section-title">Genuine Testimonials from Practitioners</h2>
+          <p class="section-subtitle">
+            See how architectural technologists, senior architects, and engineering consultants applied their learning.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “CPD compliance used to be a frustrating scramble at the end of the renewal cycle. Having all Category 1 and 3 points covered in one structured programme with assisted tracking removed all the stress. Outstanding institutional backing from SAIBD.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MS</div>
+              <div>
+                <span class="author-name">Mziwakhe Sithole, Pr.Arch.T</span>
+                <span class="author-role">Senior Architectural Technologist, Johannesburg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “The peer review board is what makes the Certificate of Competence genuinely prestigious. Defending your capstone workflow before practising peers mirrors real-world design juries. The Category 1 CPD points were officially logged with SACAP without friction.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">BN</div>
+              <div>
+                <span class="author-name">Brendan Naidoo, Pr.Arch</span>
+                <span class="author-role">Director, Urban Habitat Architecture, Pretoria</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="rating-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Akheel Khan and the SAIBD team have created a masterclass that actually respects practitioner time. No fluff or generic videos—substantive First Principles reasoning applied to everyday spatial documentation.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">LP</div>
+              <div>
+                <span class="author-name">Leanne Pretorius</span>
+                <span class="author-role">Associate Director & Building Designer, Cape Town</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section" id="faqs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Clear Guidance</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Answers to common concerns regarding CPD compliance, payment, and portal access.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the duration and validity of the CPD Companion offer?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                The CPD Companion offer is applicable for a 1 (one) year duration, valid for the 2026 calendar year (commencing January 2026 through December 2026). A new year, 2027, commences in January 2027.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are online payments processed?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Online payments are processed securely via Paystack with instant receipting and automated enrollment confirmation dispatched to your registered email.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the refund policy for the opening offer?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                The opening offer is set at R 2,500.00. Because this is a specially discounted opening offer, there are no refunds. Candidate feedback is actively collected to refine and continuously improve the system.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Who is eligible to participate in these programmes?</span>
+              <span class="faq-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Candidate and professional architectural draughtspersons, technologists, senior technologists, architects, structural engineers, quantity surveyors, and built environment firm leaders seeking verified SACAP CPD credits.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION AT THE BOTTOM (Clean, No Urgent EFT Box) -->
+    <section class="section section-alt" id="contact">
+      <div class="container" style="max-width:860px;">
+        <div style="text-align:center;margin-bottom:2.5rem;">
+          <span class="section-eyebrow">Admissions & Support</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Have questions regarding our programmes or group practice bookings? Reach out to our admissions desk.
+          </p>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-sm);">
+          <div style="display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-bottom:2rem;text-align:center;">
+            <div>
+              <span style="font-size:0.8rem;text-transform:uppercase;color:var(--text-light);font-weight:700;display:block;margin-bottom:0.25rem;">Email Support</span>
+              <a href="mailto:admin@saibd.org.za" style="font-size:1.1rem;font-weight:700;">admin@saibd.org.za</a>
+            </div>
+            <div>
+              <span style="font-size:0.8rem;text-transform:uppercase;color:var(--text-light);font-weight:700;display:block;margin-bottom:0.25rem;">Headquarters</span>
+              <span style="font-size:1.05rem;color:var(--navy-900);font-weight:600;">Durban, South Africa</span>
+            </div>
+          </div>
+
+          <form id="institute-contact-form">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sipho Ndlovu" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Professional Email *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="sipho@architecture.co.za" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-programme">Programme of Interest *</label>
+              <select id="contact-programme" class="form-control" required>
+                <option value="Option 1 - CPD Companion">Option 1: CPD Companion (R 2,500)</option>
+                <option value="Option 2 - AI in the Built Environment">Option 2: AI in the Built Environment (R 10,000 / R 7,500)</option>
+                <option value="General Question">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message *</label>
+              <textarea id="contact-message" class="form-control" placeholder="How can we assist you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-teal btn-block btn-lg">Send Inquiry</button>
+            <div id="contact-form-response"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Compact Footer (No Logo) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-compact">
+        <div style="font-weight:600;color:#FFFFFF;font-size:0.95rem;">
+          Institute of Building Design
+        </div>
+        <div class="footer-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="#programmes">Our Programmes</a>
+          <a href="cpd-companion.html">CPD Companion</a>
+          <a href="ai-in-the-built-environment.html">AI Masterclass</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <div>
+          © 2026 Institute of Building Design. A collaboration between An Architect and SAIBD (Act 44 of 2000).
+        </div>
+        <div>
+          <a href="mailto:admin@saibd.org.za" style="color:var(--text-light);">admin@saibd.org.za</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Candidate Information & Paystack Enrolment Modal -->
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="checkout-dialog">
+      <div class="checkout-header">
+        <div>
+          <h3 id="modal-heading">Programme Enrolment</h3>
+          <span style="font-size:0.75rem;color:var(--teal-700);font-weight:600;">Secure Candidate Registration</span>
+        </div>
+        <button class="checkout-close-btn" aria-label="Close Checkout">&times;</button>
+      </div>
+
+      <div class="checkout-body">
+        <form id="checkout-form">
+          <div class="checkout-step">
+            <label class="step-label">
+              <span class="step-number">1</span>
+              Select Programme
+            </label>
+            <div class="product-select-group">
+              <label class="product-option-radio selected">
+                <input type="radio" name="checkout-product" value="cpd-companion" checked>
+                <span class="radio-title">Option 1: CPD Companion</span>
+                <span class="radio-price">R 2,500</span>
+                <span style="display:block;font-size:0.75rem;color:var(--text-light);margin-top:0.25rem;">Opening offer</span>
+              </label>
+
+              <label class="product-option-radio">
+                <input type="radio" name="checkout-product" value="ai-built-environment">
+                <span class="radio-title">Option 2: AI in Built Environment</span>
+                <span class="radio-price">R 10,000</span>
+                <span style="display:block;font-size:0.75rem;color:var(--text-light);margin-top:0.25rem;">Full tuition & certificate</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="checkout-step">
+            <label class="step-label">
+              <span class="step-number">2</span>
+              Candidate Information
+            </label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-fname">First Name *</label>
+                <input type="text" id="checkout-fname" class="form-control" placeholder="e.g. Sipho" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-lname">Last Name *</label>
+                <input type="text" id="checkout-lname" class="form-control" placeholder="e.g. Ndlovu" required>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom:0.75rem;">
+              <label class="form-label" for="checkout-email">Professional Email *</label>
+              <input type="email" id="checkout-email" class="form-control" placeholder="sipho@architecture.co.za" required>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:0.75rem;">
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-phone">Mobile / WhatsApp *</label>
+                <input type="tel" id="checkout-phone" class="form-control" placeholder="+27 82 123 4567" required>
+              </div>
+              <div class="form-group" style="margin-bottom:0.75rem;">
+                <label class="form-label" for="checkout-sacap">SACAP / SAIBD Reg No.</label>
+                <input type="text" id="checkout-sacap" class="form-control" placeholder="e.g. D1234 (Optional)">
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout-summary-box">
+            <div class="summary-row">
+              <span id="checkout-item-title">Option 1 - CPD Companion (Opening Offer)</span>
+              <span id="checkout-subtotal" style="font-weight:600;color:var(--navy-900);">R 2,500</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total Payable</span>
+              <span id="checkout-total" style="color:var(--teal-700);">R 2,500</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-teal btn-block btn-lg" id="checkout-submit-btn">
+            Proceed to Paystack Secure Checkout
+          </button>
+        </form>
+
+        <!-- Redirect Confirmation State -->
+        <div id="checkout-success" style="display:none;text-align:center;padding:1.5rem 0;">
+          <div style="width:64px;height:64px;background-color:var(--teal-50);color:var(--teal-600);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 style="font-size:1.5rem;margin-bottom:0.5rem;color:var(--navy-900);">Redirecting to Paystack...</h3>
+          <p style="color:var(--text-muted);font-size:0.95rem;max-width:440px;margin:0 auto 1.5rem;">
+            Your details have been registered under reference <strong id="receipt-ref" style="color:var(--navy-900);">IBD-123456</strong>.
+          </p>
+          <a href="https://paystack.shop/pay/bzzaclu1al" target="_blank" rel="noopener" class="btn btn-teal btn-lg" id="paystack-redirect-btn" style="margin-bottom:1rem;">
+            Click here if not redirected automatically
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About Us | Institute of Building Design | Collaboration with SAIBD</title>
+  <meta name="description" content="Learn about the Institute of Building Design (IBD), an official online educational collaboration between An Architect and the South African Institute of Building Design (SAIBD).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Clean Header: Only Logo on Left, Only Home / About Us / Enrol Now on Right -->
+  <header class="site-header">
+    <div class="container header-main">
+      <a href="index.html" class="brand-logo" aria-label="Institute of Building Design Home">
+        <img src="Logo.png" alt="Institute of Building Design Logo" width="160" height="52">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-teal btn-sm" data-checkout-trigger="cpd-companion" id="nav-enrol-btn">Enrol Now</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <img src="Logo.png" alt="Logo" style="height:44px;width:auto;">
+        <button class="mobile-close" aria-label="Close Mobile Menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" style="color:var(--teal-600);">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div style="margin-top:auto;display:flex;flex-direction:column;gap:0.75rem;">
+        <button class="btn btn-teal btn-block" data-checkout-trigger="cpd-companion">Enrol Now</button>
+        <p style="margin-top:0.75rem;font-size:0.8rem;color:var(--text-light);text-align:center;">
+          SAIBD & An Architect Collaboration
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- About Hero -->
+    <section class="hero-wrapper" style="padding:4rem 0 4.5rem;">
+      <div class="container hero-content-centered">
+        <div class="hero-kicker" style="margin-bottom:1.25rem;">
+          <span class="hero-kicker-dot"></span>
+          <span>Institutional Heritage & Leadership</span>
+        </div>
+        <h1 class="hero-title">About the Institute</h1>
+        <p class="hero-desc">
+          The Institute of Building Design (IBD) is an official online educational collaboration between <strong>An Architect</strong> and the <strong>South African Institute of Building Design (SAIBD)</strong>, a recognised voluntary association established under the Architectural Profession Act No. 44 of 2000.
+        </p>
+      </div>
+    </section>
+
+    <!-- Trust Signals Bar -->
+    <section class="trust-bar" id="credentials">
+      <div class="container trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <strong>Act 44 of 2000 Recognition</strong>
+            <span>SAIBD is a formal voluntary association recognised under the Architectural Profession Act.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          </div>
+          <div>
+            <strong>SACAP CPD Aligned</strong>
+            <span>Fully compliant with the 10 Core Professional Competencies established by SACAP.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div>
+            <strong>Peer Review Board</strong>
+            <span>Independent assessment board comprising registered architects, engineers, and technologists.</span>
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <div>
+            <strong>National Industry Network</strong>
+            <span>Direct connections to leading commercial firms, municipal bodies, and private practices.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story, Vision & Mission -->
+    <section class="section">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;">
+          <div>
+            <span class="section-eyebrow">Origins & Purpose</span>
+            <h2 class="section-title">The Institute's Story</h2>
+            <p>
+              As artificial intelligence, algorithmic design, and automated computational tools rapidly enter architectural and engineering practice, professionals face a significant challenge: generic commercial courses provide surface-level tricks with zero statutory accreditation, leaving practitioners stranded in a CPD compliance nightmare.
+            </p>
+            <p>
+              Founded by <strong>Videsh Boodu</strong> (President of SAIBD) and <strong>Akheel Khan</strong> (Founder of An Architect), the Institute of Building Design was established to create an institutional home where foundational architectural theory, emerging technology, and professional practice converge.
+            </p>
+            <p>
+              Through substantive programmes vetted by practising leaders, IBD ensures that South African professionals do not waste money on arbitrary tutorials, but instead master accredited competencies that advance architectural practice and safeguard professional standing.
+            </p>
+          </div>
+
+          <div>
+            <div style="background-color:var(--bg-subtle);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:2.25rem;margin-bottom:2rem;">
+              <h3 style="font-size:1.3rem;color:var(--navy-900);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.6rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                Our Vision
+              </h3>
+              <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:0;">
+                Redefinition of professional education in South Africa through first principles thinking, applied innovation, and accessibility, with the aim of creating technological advancements and economic prosperity within the built environment.
+              </p>
+            </div>
+
+            <div style="background-color:var(--bg-subtle);border:1px solid var(--border-light);border-radius:var(--radius-md);padding:2.25rem;">
+              <h3 style="font-size:1.3rem;color:var(--navy-900);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.6rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal-600)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Our Mission
+              </h3>
+              <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:0;">
+                To build a local and international ecosystem of professionals capable of critical reasoning, technologically empowered design, and responsibly informed leadership within the built environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Faculty -->
+    <section class="section section-alt" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Governance</span>
+          <h2 class="section-title">Leadership & Governance</h2>
+          <p class="section-subtitle">
+            Guided by respected leaders in South African architectural practice and computational research.
+          </p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:960px;margin:0 auto;">
+          <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;">
+              <div style="width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg, var(--navy-900), var(--navy-700));color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem;border:2px solid var(--teal-500);flex-shrink:0;">
+                VB
+              </div>
+              <div>
+                <h3 style="font-size:1.35rem;margin-bottom:0.25rem;">Videsh Boodu</h3>
+                <span style="font-size:0.875rem;font-weight:600;color:var(--teal-700);display:block;">President, SAIBD • Co-Founder, IBD</span>
+              </div>
+            </div>
+            <p style="font-size:0.925rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.25rem;">
+              Videsh Boodu leads the South African Institute of Building Design, championing statutory standards, ethical practice, and continuing professional education across South Africa under Architectural Profession Act No. 44 of 2000.
+            </p>
+            <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border-light);font-size:0.8125rem;color:var(--text-light);">
+              Focus: Institutional Governance, Statutory Accreditation & Practice Standards
+            </div>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-md);display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;">
+              <div style="width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg, var(--teal-700), var(--navy-800));color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.5rem;border:2px solid var(--teal-400);flex-shrink:0;">
+                AK
+              </div>
+              <div>
+                <h3 style="font-size:1.35rem;margin-bottom:0.25rem;">Akheel Khan</h3>
+                <span style="font-size:0.875rem;font-weight:600;color:var(--teal-700);display:block;">Founder, An Architect • Lead Educator, IBD</span>
+              </div>
+            </div>
+            <p style="font-size:0.925rem;color:var(--text-muted);line-height:1.6;margin-bottom:1.25rem;">
+              Akheel Khan is a computational design specialist and researcher exploring generative AI in architectural reasoning. He directs the pedagogical design of IBD programmes, bridging theoretical AI with practical architectural workflows.
+            </p>
+            <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border-light);font-size:0.8125rem;color:var(--text-light);">
+              Focus: Computational Design, LLM Reasoning & Multimodal AI Workflows
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION AT THE BOTTOM (Clean, No Urgent EFT Box) -->
+    <section class="section" id="contact">
+      <div class="container" style="max-width:860px;">
+        <div style="text-align:center;margin-bottom:2.5rem;">
+          <span class="section-eyebrow">Admissions & Support</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Have questions regarding our programmes or group practice bookings? Reach out to our admissions desk.
+          </p>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid var(--border-light);border-radius:var(--radius-lg);padding:2.5rem;box-shadow:var(--shadow-sm);">
+          <div style="display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-bottom:2rem;text-align:center;">
+            <div>
+              <span style="font-size:0.8rem;text-transform:uppercase;color:var(--text-light);font-weight:700;display:block;margin-bottom:0.25rem;">Email Support</span>
+              <a href="mailto:admin@saibd.org.za" style="font-size:1.1rem;font-weight:700;">admin@saibd.org.za</a>
+            </div>
+            <div>
+              <span style="font-size:0.8rem;text-transform:uppercase;color:var(--text-light);font-weight:700;display:block;margin-bottom:0.25rem;">Headquarters</span>
+              <span style="font-size:1.05rem;color:var(--navy-900);font-weight:600;">Durban, South Africa</span>
+            </div>
+          </div>
+
+          <form id="institute-contact-form">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sipho Ndlovu" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Professional Email *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="sipho@architecture.co.za" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message *</label>
+              <textarea id="contact-message" class="form-control" placeholder="How can we assist you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-teal btn-block btn-lg">Send Inquiry</button>
+            <div id="contact-form-response"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Compact Footer (No Logo) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-compact">
+        <div style="font-weight:600;color:#FFFFFF;font-size:0.95rem;">
+          Institute of Building Design
+        </div>
+        <div class="footer-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="index.html#programmes">Our Programmes</a>
+          <a href="cpd-companion.html">CPD Companion</a>
+          <a href="ai-in-the-built-environment.html">AI Masterclass</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-copy">
+        <div>
+          © 2026 Institute of Building Design. A collaboration between An Architect and SAIBD (Act 44 of 2000).
+        </div>
+        <div>
+          <a href="mailto:admin@saibd.org.za" style="color:var(--text-light);">admin@saibd.org.za</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
