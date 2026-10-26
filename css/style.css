@@ -512,12 +512,26 @@ h4 { font-size: 1.15rem; font-weight: 600; }
 }
 
 .hero-title {
-  font-size: clamp(2.35rem, 4.2vw, 3.5rem);
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
   font-weight: 800;
   color: var(--navy-900);
-  line-height: 1.15;
+  line-height: 1.18;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-trust-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-content-centered {
@@ -528,17 +542,17 @@ h4 { font-size: 1.15rem; font-weight: 600; }
 }
 
 .hero-content-centered .hero-title {
-  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-size: clamp(2rem, 4vw, 3.4rem);
   font-weight: 800;
   color: var(--navy-900);
-  line-height: 1.15;
+  line-height: 1.18;
   margin-bottom: 1.25rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 
 .hero-content-centered .hero-desc {
-  font-size: 1.2rem;
-  line-height: 1.75;
+  font-size: clamp(1.05rem, 1.4vw, 1.175rem);
+  line-height: 1.7;
   color: var(--text-muted);
   max-width: 720px;
   margin: 0 auto 2.25rem;
@@ -765,7 +779,7 @@ h4 { font-size: 1.15rem; font-weight: 600; }
   background-color: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 2.75rem 2.25rem;
+  padding: 2.25rem 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -830,16 +844,17 @@ h4 { font-size: 1.15rem; font-weight: 600; }
 .price-display {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 0.35rem;
 }
 
 .price-val {
-  font-size: 3rem;
+  font-size: clamp(2.35rem, 3.2vw, 2.85rem);
   font-weight: 800;
   color: var(--navy-900);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .price-unit {
@@ -1457,6 +1472,166 @@ textarea.form-control {
   resize: vertical;
 }
 
+/* Contact Section Responsive Card & Form */
+.contact-card-wrapper {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+}
+
+.contact-info-header {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-split-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3.5rem;
+}
+
+/* Worth Box */
+.worth-box {
+  margin-top: 3.5rem;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.25rem;
+  box-shadow: var(--shadow-md);
+}
+
+/* About Page: Story, Vision & Mission */
+.story-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 2.5rem;
+}
+
+.story-body p {
+  margin-bottom: 1.25rem;
+}
+
+.vision-mission-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.vision-card,
+.mission-card {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+  border-color: var(--teal-400);
+  box-shadow: var(--shadow-sm);
+}
+
+.vision-card-title,
+.mission-card-title {
+  font-size: 1.2rem;
+  color: var(--navy-900);
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+}
+
+.vision-card-text,
+.mission-card-text {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Leadership & Governance */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.25rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.leadership-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.leadership-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.leadership-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.leadership-role {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--teal-700);
+  display: block;
+}
+
+.leadership-bio {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.leadership-focus {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+  font-size: 0.8125rem;
+  color: var(--text-light);
+}
+
 /* Footer - Compact & Clean without Logo */
 .site-footer {
   background-color: var(--navy-950);
@@ -1513,7 +1688,10 @@ textarea.form-control {
   to { opacity: 1; }
 }
 
-/* Responsive Media Queries */
+/* ==========================================================================
+   Responsive Media Queries — Optimized for Mobile Viewports
+   ========================================================================== */
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1539,6 +1717,31 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  /* Layout & Container */
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .section {
+    padding: 3.25rem 0;
+  }
+  .section-sm {
+    padding: 2.25rem 0;
+  }
+  .section-header {
+    margin-bottom: 2.25rem;
+  }
+  .section-title {
+    font-size: 1.65rem;
+    line-height: 1.25;
+  }
+  .section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.75rem;
+  }
+
+  /* Navigation */
   .nav-menu,
   .nav-actions .btn:not(.btn-mobile-visible) {
     display: none;
@@ -1546,22 +1749,376 @@ textarea.form-control {
   .mobile-toggle {
     display: block;
   }
-  .hero-floating-card {
-    position: static;
+
+  /* Hero Section (Clear, Balanced Mobile Typography) */
+  .hero-wrapper {
+    padding: 2.75rem 0 3.25rem;
+  }
+  .hero-content-centered {
+    padding: 0;
+  }
+  .hero-kicker {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
     max-width: 100%;
-    margin-top: 1rem;
+    white-space: normal;
+    text-align: left;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+  .hero-title,
+  .hero-content-centered .hero-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .hero-content-centered .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .hero-cta-group,
+  .hero-content-centered .hero-cta-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.75rem;
+    gap: 0.75rem;
+  }
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-trust-list,
+  .hero-content-centered .hero-trust-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding-top: 1.25rem;
+  }
+  .hero-trust-item {
+    font-size: 0.8125rem;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Trust Signals Bar */
+  .trust-bar {
+    padding: 1.75rem 0;
   }
   .trust-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .trust-card {
+    gap: 0.85rem;
+  }
+  .trust-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+  .trust-icon-box svg {
+    width: 18px;
+    height: 18px;
+  }
+  .trust-card strong {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  .trust-card span {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Option 1 & Option 2: Programmes & Pricing Cards */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .product-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: var(--radius-md);
+  }
+  .product-header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .product-tag {
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+  }
+  .product-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.25;
+  }
+  .product-desc {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    margin-bottom: 0.85rem;
+  }
+  .price-display {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.35rem;
+  }
+  .price-val {
+    font-size: 2.15rem;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  .price-unit {
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .price-note {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    margin-top: 0.4rem;
+    padding: 0.4rem 0.65rem;
+    background: var(--teal-50);
+    border: 1px solid var(--teal-100);
+    border-radius: var(--radius-sm);
+  }
+  .product-features-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+  .feature-list {
+    gap: 0.55rem;
+    margin-bottom: 1.5rem;
+  }
+  .feature-item {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    gap: 0.6rem;
+  }
+  .product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .product-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+  .featured-ribbon {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.9rem;
+    top: -11px;
+  }
+
+  /* What Makes This Worth Section */
+  .worth-box {
+    margin-top: 2.5rem;
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .worth-box h3 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+  .worth-box p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  .worth-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  .worth-card {
+    padding: 1.25rem 1rem;
+  }
+
+  /* About Section: Story, Vision & Mission */
+  .story-body {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+  .story-body p {
+    margin-bottom: 0.9rem;
+  }
+  .vision-mission-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .vision-card,
+  .mission-card {
+    padding: 1.25rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .vision-card-title,
+  .mission-card-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
+  }
+  .vision-card-title svg,
+  .mission-card-title svg {
+    width: 18px;
+    height: 18px;
+  }
+  .vision-card-text,
+  .mission-card-text {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+  }
+
+  /* Leadership Cards */
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .leadership-card {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .leadership-card-header {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .leadership-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 1.15rem;
+  }
+  .leadership-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .leadership-role {
+    font-size: 0.8125rem;
+  }
+  .leadership-bio {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+  .leadership-focus {
+    font-size: 0.775rem;
+    padding-top: 0.75rem;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    padding: 1.5rem 1.15rem;
+  }
+  .testimonial-quote {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  /* Contact Section (Completely Prevents Field Overlapping) */
+  .contact-split-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .contact-card-wrapper {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .contact-info-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-info-header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info-header a {
+    word-break: break-all;
+    font-size: 1rem !important;
+  }
+  .form-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .form-control {
+    font-size: 16px !important; /* Prevents auto-zoom in mobile Safari/Chrome */
+    padding: 0.75rem 0.85rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Checkout Dialog */
+  .checkout-dialog {
+    max-width: 95vw;
+    margin: 1rem auto;
+  }
+  .checkout-body {
+    padding: 1.25rem 1rem;
+  }
+  .checkout-header {
+    padding: 1rem 1.25rem;
   }
   .product-select-group,
   .gateway-grid {
     grid-template-columns: 1fr;
   }
+  .checkout-floating-card {
+    position: static;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
   }
+  .footer-compact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .footer-nav-links {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .footer-bottom-copy {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
   .cta-banner {
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title,
+  .hero-content-centered .hero-title {
+    font-size: 1.55rem;
+    line-height: 1.22;
+  }
+  .product-card {
+    padding: 1.25rem 0.95rem !important;
+  }
+  .price-val {
+    font-size: 1.85rem;
+    letter-spacing: 0;
+  }
+  .contact-card-wrapper {
+    padding: 1.25rem 0.95rem;
   }
 }
