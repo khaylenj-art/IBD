@@ -28,6 +28,11 @@
     .testimonial-card .author-avatar{transition:transform .35s ease,background .35s ease;}
     .testimonial-card:hover .author-avatar{transform:rotate(-8deg) scale(1.12);background:var(--brand) !important;color:#1f2937 !important;}
     .testimonials-grid:hover .testimonial-card:not(:hover){opacity:.7;transition:opacity .3s ease;}
+
+    /* ---- Testimonials: horizontal row ---- */
+    .testimonials-grid{display:flex !important;flex-wrap:nowrap;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.75rem .25rem 1.5rem;-webkit-overflow-scrolling:touch;}
+    .testimonials-grid .testimonial-card{flex:0 0 340px;max-width:340px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between;background:#fff;}
+    @media (max-width:640px){.testimonials-grid .testimonial-card{flex-basis:85%;max-width:85%;}}
     @media (prefers-reduced-motion:reduce){.testimonial-card,.testimonial-card *,.btn{transition:none !important;transform:none !important;}}
   </style>
 </head>
@@ -103,8 +108,7 @@
     <section class="section section-alt" id="testimonials">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Professional Feedback</span>
-          <h2 class="section-title">What Practitioners Say</h2>
+          <h2 class="section-title">Professional Feedback</h2>
         </div>
 
         <div class="testimonials-grid">
