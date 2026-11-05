@@ -9,6 +9,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ---- Brand override: yellow buttons, white theme, grey/white icons ---- */
+    :root{--brand:rgb(255,222,33);--brand-hover:rgb(240,205,0);--teal-50:#fff;--teal-500:#6b7280;--teal-600:#4b5563;--teal-700:#4b5563;}
+    body,.hero-wrapper,.section,.section-alt{background:#fff !important;}
+    .btn-teal,.btn-navy,.btn.btn-teal,.btn.btn-navy{background:var(--brand) !important;border-color:var(--brand) !important;color:#1f2937 !important;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;}
+    .btn-teal:hover,.btn-navy:hover{background:var(--brand-hover) !important;border-color:var(--brand-hover) !important;transform:translateY(-2px);box-shadow:0 6px 16px rgba(255,222,33,.45);}
+    .btn-outline{background:#fff !important;color:#1f2937 !important;border:1.5px solid #d1d5db !important;}
+    .btn-outline:hover{border-color:var(--brand) !important;background:rgba(255,222,33,.15) !important;}
+    .featured-ribbon{background:var(--brand) !important;color:#1f2937 !important;}
+    .feature-icon{color:#9ca3af !important;fill:#9ca3af !important;}
+    .author-avatar{background:#e5e7eb !important;color:#fff !important;background:#9ca3af !important;}
+    .mobile-nav-links a[style]{color:#1f2937 !important;}
+
+    /* ---- Testimonials: hover motion ---- */
+    .testimonial-card{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease,border-color .35s ease;border:1px solid transparent;will-change:transform;}
+    .testimonial-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 18px 40px rgba(0,0,0,.12);border-color:var(--brand);}
+    .testimonial-card .author-avatar{transition:transform .35s ease,background .35s ease;}
+    .testimonial-card:hover .author-avatar{transform:rotate(-8deg) scale(1.12);background:var(--brand) !important;color:#1f2937 !important;}
+    .testimonials-grid:hover .testimonial-card:not(:hover){opacity:.7;transition:opacity .3s ease;}
+    @media (prefers-reduced-motion:reduce){.testimonial-card,.testimonial-card *,.btn{transition:none !important;transform:none !important;}}
+  </style>
 </head>
 <body>
 
@@ -64,19 +85,15 @@
     <!-- HERO: Centered, No Image, Addressing CPD Nightmare & Wasted Money -->
     <section class="hero-wrapper" id="home">
       <div class="container hero-content-centered">
-        <h1 class="hero-title">
-          We help built environment practitioners solve by using mandatory CPD compliance to future proof your career
-        </h1>
+        <h1 class="hero-title">The Institute of Building Design</h1>
         
-        <p class="hero-desc">
-          We help built environment practitioners solve the CPD nightmare and stop wasting money on superficial courses that don't add genuine career or statutory value. Gain accredited SACAP CPD points, peer-reviewed competencies, and practical industry workflows through institutional education.
-        </p>
+        <p class="hero-desc">We help built environment practitioners solve the CPD nightmare by using mandatory CPD compliance to future proof your career.</p>
         
         <div class="hero-cta-group">
           <a href="#programmes" class="btn btn-navy btn-lg">Explore Programmes</a>
           <button class="btn btn-teal btn-lg" data-checkout-trigger="cpd-companion">Enrol Now</button>
         </div>
-        <p style="margin-top:1rem;font-size:0.95rem;font-weight:600;color:var(--teal-700);">Endorsed by SAIBD</p>
+        <p style="margin-top:1rem;font-size:0.95rem;font-weight:600;color:#555;">Endorsed by SAIBD</p>
 
 
       </div>
@@ -87,57 +104,66 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Professional Feedback</span>
-          <h2 class="section-title">Genuine Testimonials from Practitioners</h2>
-          <p class="section-subtitle">
-            See how architectural technologists, senior architects, and engineering consultants applied their learning.
-          </p>
+          <h2 class="section-title">What Practitioners Say</h2>
         </div>
 
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <div>
-              <div class="rating-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                "CPD compliance used to be a frustrating scramble at the end of the renewal cycle. Having all Category 1 and 3 points covered in one structured programme with assisted tracking removed all the stress. Outstanding institutional backing from SAIBD."
-              </p>
+              <p class="testimonial-quote">“The course shifted my understanding of AI from simply being a tool to recognising it as a system that generates probabilistic outputs. It has taught me to engage with AI more critically and question its results, particularly in professional practice.”</p>
             </div>
             <div class="testimonial-author">
-              <div class="author-avatar">MS</div>
+              <div class="author-avatar">TA</div>
               <div>
-                <span class="author-name">Mziwakhe Sithole, Pr.Arch.T</span>
-                <span class="author-role">Senior Architectural Technologist, Johannesburg</span>
+                <span class="author-name">Tamlyn</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <div>
-              <div class="rating-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                "The peer review board is what makes the Certificate of Competence genuinely prestigious. Defending your capstone workflow before practising peers mirrors real-world design juries. The Category 1 CPD points were officially logged with SACAP without friction."
-              </p>
+              <p class="testimonial-quote">“The course reinforced my view of AI as a tool that enhances human thinking rather than replaces it. I now approach AI more critically, using it to explore complex problems, support decision-making and strengthen architectural thinking.”</p>
             </div>
             <div class="testimonial-author">
-              <div class="author-avatar">BN</div>
+              <div class="author-avatar">TY</div>
               <div>
-                <span class="author-name">Brendan Naidoo, Pr.Arch</span>
-                <span class="author-role">Director, Urban Habitat Architecture, Pretoria</span>
+                <span class="author-name">Tylo</span>
               </div>
             </div>
           </div>
 
           <div class="testimonial-card">
             <div>
-              <div class="rating-stars">★★★★★</div>
-              <p class="testimonial-quote">
-                "Akheel Khan and the SAIBD team have created a masterclass that actually respects practitioner time. No fluff or generic videos—substantive First Principles reasoning applied to everyday spatial documentation."
-              </p>
+              <p class="testimonial-quote">“The course shifted my perspective on AI from seeing it as a shortcut to recognising it as a tool for exploring ideas. I now see AI as an ‘Autonomous Probability Engine’ and a thinking partner that helps me approach complex problems from new perspectives.”</p>
             </div>
             <div class="testimonial-author">
-              <div class="author-avatar">LP</div>
+              <div class="author-avatar">BI</div>
               <div>
-                <span class="author-name">Leanne Pretorius</span>
-                <span class="author-role">Associate Director & Building Designer, Cape Town</span>
+                <span class="author-name">Bronwen Ann Impey</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <p class="testimonial-quote">“This workshop changed the way I think about AI. I realised that working with AI is not just about technical skills, but about asking better questions, thinking more clearly and understanding the problems we want to solve.”</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">JJ</div>
+              <div>
+                <span class="author-name">Jan Frederik Jacobus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <p class="testimonial-quote">“The course highlighted how technical skills can sometimes limit creativity. AI offers an opportunity to bridge that gap, helping turn ideas into reality without being restricted by a lack of coding or technical expertise.”</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <span class="author-name">Marié</span>
               </div>
             </div>
           </div>
